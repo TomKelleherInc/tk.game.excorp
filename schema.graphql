@@ -2,11 +2,23 @@
 ## the type name as the table name and specifying it is an "export" available in the REST and other external protocols.
 
 
-type Dog @table @export {
-	id: ID @primaryKey
-	name: String
-	breed: String
-	age: Int
-	tricks: [String]
-	howdy: 
+
+type games @table @export {
+    id: ID @primaryKey
+    code: String @indexed
+    hostId: String
+    players: Any
+    segments: Any
+    status: String
+    currentArtistOrder: Int
+    createdAt: String
+    updatedAt: String
+}
+
+type players @table @export {
+    id: ID @primaryKey
+    email: String @indexed
+    gameName: String
+    gameHistory: Any
+
 }
