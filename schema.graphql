@@ -20,5 +20,7 @@ type players @table @export {
     email: String @indexed
     gameName: String
     gameHistory: Any
+    createdAt: String
+    updatedAt: String
 
 }
