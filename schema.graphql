@@ -11,6 +11,7 @@ type games @table @export {
     segments: Any
     status: String
     currentArtistOrder: Int
+	 stuff: String
     createdAt: String
     updatedAt: String
 }
